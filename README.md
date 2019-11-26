@@ -6,7 +6,7 @@ Install [Node.js](https://nodejs.org/en/)
 ## Project setup
 ```
 git clone https://github.com/boztunc/Add-Richmedia-To-Firebase.git
-cd add-richmedia-api
+cd Add-Richmedia-To-Firebase
 npm install
 ```
 
