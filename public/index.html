@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Add Richmedia</title>
+
+    <meta name="description" content="Refresh Video Altbant">
+    <meta name="author" content="Refresh">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <style>
+        * {
+            margin: 5px;
+            font-size: 15px;
+            font-family: monospace;
+        }
+
+        input,
+        button {
+            width: 250px;
+            height: 30px;
+        }
+
+        h1 {
+            font-size: 18px;
+        }
+
+        input[type="radio"] {
+            width: unset;
+            height: unset;
+        }
+
+        table {
+            text-align: left;
+            margin: 0 auto;
+        }
+
+        td {
+            padding-right: 30px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1>ADD RICHMEDIA TO GALLERY</h1>
+        <hr />
+        <form name="richmediaForm" method="POST">
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="type" value="funnel">Funnel</input>
+                    </td>
+                    <td>
+                        <input type="radio" name="type" value="parallax">Parallax</input>
+                    </td>
+                    <td>
+                        <input type="radio" name="type" value="addToCalendar">Takvime Ekle</input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="type" value="weather">Hava Durumu</input>
+                    </td>
+                    <td>
+                        <input type="radio" name="type" value="findColor">Renk Algılama</input>
+                    </td>
+                    <td>
+                        <input type="radio" name="type" value="game">Oyun</input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="type" value="hyperscroll">Hyperscroll</input>
+                    </td>
+                    <td>
+                        <input type="radio" name="type" value="voiceCommand">Sesli Komut</input>
+                    </td>
+                    <td>
+                        <input type="radio" name="type" value="storeLocator">Store Locator</input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="type" value="vibrate">Titreşim</input>
+                    </td>
+                    <td>
+                        <input type="radio" name="type" value="noTouch">No-Touch</input>
+                    </td>
+                    <td>
+                        <input type="radio" name="type" value="ambientLight">Ortam Işığı</input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="type" value="battery">Batarya Durumu</input>
+                    </td>
+                    <td>
+                        <input type="radio" name="type" value="3DTouch">3D Touch</input>
+                    </td>
+                    <td>
+                        <input type="radio" name="type" value="360content">360 İçerik</input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="type" value="gyroscope">Gyroscope</input>
+                    </td>
+                    <td>
+                        <input type="radio" name="type" value="interactiveRM">Interactive Richmedia</input>
+                    </td>
+                </tr>
+            </table>
+
+            <hr />
+            <input placeholder="Marka İsmi" name="marka" />
+            <input placeholder="Proje İsmi" name="proje" />
+            <br />
+            <input placeholder="QR Code URL" name="QRCode" />
+            <input placeholder="Video No" name="videoNo" />
+            <br />
+            Poster Yükle | <input type="file" placeholder="Poster URL" name="poster" />
+            <br />
+            <textarea placeholder="Açıklama" name="aciklama" cols="57" rows="10"></textarea><br />
+            <button id="save" type="button">Kaydet</button>
+        </form>
+
+
+    </div>
+
+    <script src="./js/postData.js"></script>
+</body>
+
+</html>
